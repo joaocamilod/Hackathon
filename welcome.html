@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learnclass Biopark </title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000, #333f57);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .container {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+        }
+        header img {
+            width: 200px;
+        }
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 100px;
+        }
+        h2 {
+            align-items: center;
+            font-size: 4em;
+        }
+        .highlight {
+            font-size: 1.15em;
+            color: #87C5FF;
+        }
+        .price {
+            font-size: 1.5em;
+            margin: 80px 0;
+        }
+        .subscribe-btn {
+            background-color: #4e92f1;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            width: 500px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .subscribe-btn:hover {
+            background-color: #3b7cc4;
+        }
+        .course-areas {
+            margin: 40px 0;
+
+        }
+        .course-areas div {
+            display: inline-block;
+            margin: 25px 100px;
+            text-align: center;
+        }
+        .course-areas img {
+            width: 125px;
+            height: 125px;
+            display: block;
+            margin: 0 auto;
+        }
+        .course-areas span {
+            display: block;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logoBrancaLeranclass.png" alt="Learnclass Biopark Logo">
+        <nav>
+            <a href="login.html">Entrar</a>
+            <a href="registro.html">Crie uma conta</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1><span>Até quando você vai</span> <span class="highlight">aceitar estar insatisfeito</span> <span>com os seus conhecimentos?</span></h1>
+        <p class="price">Com apenas R$109,90 você pode correr atrás de todo o <span style="color: #4e92f1;">conhecimento que tanto busca!</span></p>
+         <a href="planos.html"> <button class="subscribe-btn">Assine agora</button> </a>
+        <div class="course-areas">
+            <div>
+                <h2>Áreas de cursos disponíveis. <h2>
+            </div>
+            <div>
+                <img src="img/Management.png" alt="Gestão">
+                <span>GESTÃO</span>
+            </div>
+            <div>
+                <img src="img/Pharmacy Shop.png" alt="Farmácia">
+                <span>FARMÁCIA</span>
+            </div>
+            <div>
+                <img src="img/Food Bar.png" alt="Alimentação">
+                <span>ALIMENTAÇÃO</span>
+            </div>
+            <div>
+                <img src="img/Open Book.png" alt="Educação">
+                <span>EDUCAÇÃO</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

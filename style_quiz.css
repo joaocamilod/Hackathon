@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #223443;
+    display: flex;
+    position: fixed;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 3%;
+    width: 95%;
+}
+header img {
+    max-height: 75px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.gap{
+
+    height: 100px;
+}
+
+footer {
+    background-color: #223443;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1000;
+    clear: both;
+    width: 100%;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.quiz, .exercise {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.quiz form, .exercise textarea {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #223443;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #15212b;
+}
+
+input[type="submit"] {
+    background-color: #223443; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Suaviza a transição de cor de fundo */
+}
+
+input[type="submit"]:hover {
+    background-color: #15212b; /* Cor de fundo ao passar o mouse */
+}
+
+#exercise1-feedback, #exercise2-feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.sidebar {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 200px;
+    height: calc(100% - 80px);
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}

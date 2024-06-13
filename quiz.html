@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes e Exercícios</title>
+    <link rel="stylesheet" href="style_quiz.css">
+    <style>
+        .check-icon {
+            color: green;
+            font-weight: bold;
+            display: none;
+        }
+        .checked .check-icon {
+            display: inline;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .progress-bar-inner {
+            width: 100%;
+            height: 30px;
+            background-color: #4caf50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .pdf-preview {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+            background: url('img/image.png') no-repeat center center;
+            background-size: contain;
+        }
+        .download-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .download-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logoBrancaLeranclass.png" alt="logo">
+        <nav>
+            <a href="#"> Certificados </a>
+            <a href="#"> Progresso </a>
+            <a href="forum.html"> Comunidade </a>
+            <a href="#"> Quizzes </a>
+        </nav>
+    </header>
+    <div class="gap"></div>
+    <main>
+        <div class="content">
+            <section id="apresentacao">
+                <h2>Apresentação <span class="check-icon">✔</span></h2>
+                <p>Bem-vindo ao Curso de Python para Iniciantes!...</p>
+                <p>Fique agora com a vídeo aula</p>
+                <iframe width="914" height="514" src="https://www.youtube.com/embed/-VeVq64Fgw0" title="Curso Completo de Python - do Zero ao Avançado (Masterclass)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>           
+                <h2>Essa aula foi patrocinada pela empresa Biopark Educação</h2>
+
+                <button onclick="markAndNext('apresentacao')">Marcar como feito e próximo</button>
+            </section>
+            <section id="materias">
+                <h2>Matérias do curso <span class="check-icon">✔</span></h2>
+                <p>Aqui estão as matérias que você aprenderá...</p>
+
+                <h1>Timestamps do Curso de Python</h1>
+                <ul>
+                    <li>00:00:00 - Apresentação do Curso</li>
+                    <li>00:00:50 - Introdução ao Python e suas aplicações</li>
+                    <li>00:11:33 - Instalação do Python e editor VS Code e teste</li>
+                    <li>00:29:35 - Editores de Código e IDEs alternativos</li>
+                    <li>00:39:46 - Variáveis e Tipos de Dados</li>
+                    <li>01:00:07 - Operadores Aritméticos</li>
+                    <li>01:12:34 - Operadores de Comparação</li>
+                    <li>01:24:33 - Operadores Lógicos AND, OR, NOT</li>
+                    <li>01:35:57 - Desvios Condicionais - if, elif, else</li>
+                    <li>01:52:02 - Saída de dados com função print, format e f-strings</li>
+                    <li>02:10:43 - Laço de Repetição While</li>
+                    <li>02:24:22 - Laço de repetição for e função range</li>
+                    <li>02:39:41 - Encadeamento de Laços de Repetição</li>
+                    <li>02:46:23 - Import de módulos e gerenciamento de pacotes com pip</li>
+                    <li>03:09:35 - Números aleatórios com módulo random</li>
+                    <li>03:25:19 - Listas</li>
+                    <li>03:46:40 - Tuplas</li>
+                    <li>04:00:05 - Funções matemáticas built-In e o módulo Math</li>
+                    <li>04:10:37 - Manipulação de Strings</li>
+                    <li>04:36:24 - Dicionários</li>
+                    <li>04:51:23 - Sets</li>
+                    <li>05:05:12 - Funções em Python - Introdução</li>
+                    <li>05:25:14 - Parâmetros opcionais, obrigatórios e valor padrão</li>
+                    <li>05:37:04 - Escopos de Variáveis - Global e Local</li>
+                    <li>05:48:17 - Manipulação de Exceções - Tratamento de Erros</li>
+                    <li>06:13:02 - Funções Recursivas</li>
+                    <li>06:25:58 - Funções lambda, map, filter, reduce</li>
+                    <li>06:50:10 - Compreensões de Lista</li>
+                    <li>07:03:31 - Classes, Objetos, Métodos, Atributos, Herança - POO em Python</li>
+                    <li>07:35:30 - Gerenciamento de pastas e arquivos do sistema com módulo os</li>
+                    <li>08:07:44 - Manipulação de Arquivos de Texto - Leitura e Escrita</li>
+                    <li>08:34:37 - Outras técnicas - generators, enumerate, with, operador ternário</li>
+                    <li>08:55:18 - Encerramento</li>
+                </ul>
+
+                <button onclick="markAndNext('materias')">Marcar como feito e próximo</button>
+            </section>
+            <section id="exercicios">
+                <h2>Exercícios <span class="check-icon">✔</span></h2>
+                <p>Pratique seus conhecimentos com nossos exercícios...</p>
+
+                <h2>Quiz 1: Introdução ao Python e suas aplicações <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q1">Qual é a principal aplicação do Python?</label><br><br>
+        <input type="radio" id="q1a" name="q1" value="a">
+        <label for="q1a">a) Desenvolvimento web</label><br><br>
+        <input type="radio" id="q1b" name="q1" value="b">
+        <label for="q1b">b) Análise de dados</label><br><br>
+        <input type="radio" id="q1c" name="q1" value="c">
+        <label for="q1c">c) Inteligência artificial e machine learning</label><br><br>
+        <input type="radio" id="q1d" name="q1" value="d">
+        <label for="q1d">d) Todas as anteriores</label><br><br>
+    </form>
+
+    <h2>Exercício 1: Instalação do Python e editor VS Code <span class="check-icon">✔</span></h2>
+    <p>Instale o Python e o editor VS Code em seu computador.</p>
+    <p>Após a instalação, escreva um programa simples em Python e execute-o no VS Code.</p>
+
+    <!-- Quiz 2: Editores de Código e IDEs alternativos -->
+    <h2>Quiz 2: Editores de Código e IDEs alternativos <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q2">Qual é uma alternativa popular ao VS Code para desenvolvimento em Python?</label><br><br>
+        <input type="radio" id="q2a" name="q2" value="a">
+        <label for="q2a">a) PyCharm</label><br><br>
+        <input type="radio" id="q2b" name="q2" value="b">
+        <label for="q2b">b) Sublime Text</label><br><br>
+        <input type="radio" id="q2c" name="q2" value="c">
+        <label for="q2c">c) Atom</label><br><br>
+        <input type="radio" id="q2d" name="q2" value="d">
+        <label for="q2d">d) Todos os anteriores</label><br><br>
+    </form>
+
+    <h2>Exercício 2: Variáveis e Tipos de Dados <span class="check-icon">✔</span></h2>
+    <p>Crie três variáveis em Python: uma do tipo inteiro, outra do tipo string e outra do tipo booleano.</p>
+    <p>Atribua valores às variáveis e imprima-as na tela.</p>
+
+    <!-- Quiz 3: Variáveis e Tipos de Dados -->
+    <h2>Quiz 3: Variáveis e Tipos de Dados <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q3">Qual é o tipo de dado utilizado para representar um conjunto de caracteres em Python?</label><br><br>
+        <input type="radio" id="q3a" name="q3" value="a">
+        <label for="q3a">a) Inteiro</label><br><br>
+        <input type="radio" id="q3b" name="q3" value="b">
+        <label for="q3b">b) String</label><br><br>
+        <input type="radio" id="q3c" name="q3" value="c">
+        <label for="q3c">c) Booleano</label><br><br>
+        <input type="radio" id="q3d" name="q3" value="d">
+        <label for="q3d">d) Lista</label><br><br>
+    </form>
+
+    <h2>Exercício 3: Operadores Aritméticos <span class="check-icon">✔</span></h2>
+    <p>Escreva um programa em Python que calcule a área de um retângulo.</p>
+    <p>O usuário deve fornecer os valores da base e da altura.</p>
+
+    <!-- Continue adicionando perguntas e exercícios para os outros temas -->
+
+    <h2>Quiz 4: Operadores Aritméticos <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q4">Qual operador é utilizado para elevar um número a uma potência em Python?</label><br><br>
+        <input type="radio" id="q4a" name="q4" value="a">
+        <label for="q4a">a) +</label><br><br>
+        <input type="radio" id="q4b" name="q4" value="b">
+        <label for="q4b">b) **</label><br><br>
+        <input type="radio" id="q4c" name="q4" value="c">
+        <label for="q4c">c) *</label><br><br>
+        <input type="radio" id="q4d" name="q4" value="d">
+        <label for="q4d">d) /</label><br><br>
+    </form>
+
+    <h2>Exercício 4: Operadores de Comparação <span class="check-icon">✔</span></h2>
+    <p>Escreva um programa em Python que compare duas idades fornecidas pelo usuário e indique se são iguais ou diferentes.</p>
+    <p>Em seguida, verifique se a primeira idade é maior, menor ou igual à segunda idade.</p>
+
+    <h2>Quiz 5: Operadores de Comparação <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q5">Qual é o resultado da expressão em Python: 5 == 5?</label><br><br>
+        <input type="radio" id="q5a" name="q5" value="a">
+        <label for="q5a">a) True</label><br><br>
+        <input type="radio" id="q5b" name="q5" value="b">
+        <label for="q5b">b) False</label><br><br>
+        <input type="radio" id="q5c" name="q5" value="c">
+        <label for="q5c">c) Erro de sintaxe</label><br><br>
+        <input type="radio" id="q5d" name="q5" value="d">
+        <label for="q5d">d) None</label><br><br>
+    </form>
+
+    <h2>Exercício 5: Operadores Lógicos AND, OR, NOT <span class="check-icon">✔</span></h2>
+    <p>Escreva um programa em Python que verifique se um número fornecido pelo usuário é par e positivo.</p>
+    <p>O programa deve imprimir "Par e positivo" se as duas condições forem verdadeiras, caso contrário, imprimir "Não é par e positivo".</p>
+
+    <!-- Quiz 6: Operadores Lógicos AND, OR, NOT -->
+    <h2>Quiz 6: Operadores Lógicos AND, OR, NOT <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q6">Qual é o resultado da expressão em Python: True and False?</label><br><br>
+        <input type="radio" id="q6a" name="q6" value="a">
+        <label for="q6a">a) True</label><br><br>
+        <input type="radio" id="q6b" name="q6" value="b">
+        <label for="q6b">b) False</label><br><br>
+        <input type="radio" id="q6c" name="q6" value="c">
+        <label for="q6c">c) Erro de sintaxe</label><br><br>
+        <input type="radio" id="q6d" name="q6" value="d">
+        <label for="q6d">d) None</label><br><br>
+    </form>
+
+    <h2>Exercício 6: Desvios Condicionais - if, elif, else <span class="check-icon">✔</span></h2>
+    <p>Escreva um programa em Python que peça ao usuário para digitar sua idade.</p>
+    <p>Se a idade for maior ou igual a 18, o programa deve imprimir "Você é maior de idade.".</p>
+    <p>Se a idade for menor que 18, o programa deve imprimir "Você é menor de idade.".</p>
+
+    <!-- Continue adicionando perguntas e exercícios para os outros temas -->
+
+    <h2>Quiz 7: Desvios Condicionais - if, elif, else <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q7">Qual é o resultado da expressão em Python: 10 > 5?</label><br><br>
+        <input type="radio" id="q7a" name="q7" value="a">
+        <label for="q7a">a) True</label><br><br>
+        <input type="radio" id="q7b" name="q7" value="b">
+        <label for="q7b">b) False</label><br><br>
+        <input type="radio" id="q7c" name="q7" value="c">
+        <label for="q7c">c) Erro de sintaxe</label><br><br>
+        <input type="radio" id="q7d" name="q7" value="d">
+        <label for="q7d">d) None</label><br><br>
+    </form>
+
+    <h2>Exercício 7: Saída de dados com função print, format e f-strings <span class="check-icon">✔</span></h2>
+    <p>Escreva um programa em Python que solicite ao usuário seu nome e idade.</p>
+    <p>O programa deve imprimir uma mensagem formatada com o nome e a idade do usuário, por exemplo: "Olá, João! Você tem 25 anos."</p>
+
+    <!-- Quiz 8: Saída de dados com função print, format e f-strings -->
+    <h2>Quiz 8: Saída de dados com função print, format e f-strings <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q8">Qual é a maneira mais moderna e recomendada de formatar strings em Python?</label><br><br>
+        <input type="radio" id="q8a" name="q8" value="a">
+        <label for="q8a">a) print("Olá, {}".format(nome))</label><br><br>
+        <input type="radio" id="q8b" name="q8" value="b">
+        <label for="q8b">b) print("Olá, {nome}".format(nome=nome))</label><br><br>
+        <input type="radio" id="q8c" name="q8" value="c">
+        <label for="q8c">c) print(f"Olá, {nome}")</label><br><br>
+        <input type="radio" id="q8d" name="q8" value="d">
+        <label for="q8d">d) Todas as anteriores</label><br><br>
+    </form>
+
+    <h2>Exercício 8: Laço de Repetição While <span class="check-icon">✔</span></h2>
+    <p>Escreva um programa em Python que solicite ao usuário um número.</p>
+    <p>O programa deve imprimir todos os números de 1 até o número fornecido pelo usuário, utilizando um loop while.</p>
+
+    <!-- Quiz 9: Laço de Repetição While -->
+    <h2>Quiz 9: Laço de Repetição While <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q9">Qual é o propósito principal do loop while em Python?</label><br><br>
+        <input type="radio" id="q9a" name="q9" value="a">
+        <label for="q9a">a) Executar um bloco de código um número específico de vezes</label><br><br>
+        <input type="radio" id="q9b" name="q9" value="b">
+        <label for="q9b">b) Executar um bloco de código enquanto uma condição específica for verdadeira</label><br><br>
+        <input type="radio" id="q9c" name="q9" value="c">
+        <label for="q9c">c) Executar um bloco de código após o término de outro bloco de código</label><br><br>
+        <input type="radio" id="q9d" name="q9" value="d">
+        <label for="q9d">d) Nenhuma das anteriores</label><br><br>
+    </form>
+
+    <h2>Exercício 9: Laço de repetição for e função range <span class="check-icon">✔</span></h2>
+    <p>Escreva um programa em Python que imprima os números pares de 1 a 10 utilizando um loop for e a função range.</p>
+
+    <!-- Quiz 10: Laço de repetição for e função range -->
+    <h2>Quiz 10: Laço de repetição for e função range <span class="check-icon">✔</span></h2>
+    <form action="#">
+        <label for="q10">Qual é o resultado da expressão em Python: sum(range(5))?</label><br><br>
+        <input type="radio" id="q10a" name="q10" value="a">
+        <label for="q10a">a) 5</label><br><br>
+        <input type="radio" id="q10b" name="q10" value="b">
+        <label for="q10b">b) 10</label><br><br>
+        <input type="radio" id="q10c" name="q10" value="c">
+        <label for="q10c">c) 15</label><br><br>
+        <input type="radio" id="q10d" name="q10" value="d">
+        <label for="q10d">d) 0</label><br><br>
+    </form>
+
+    <h2>Exercício 10: Encadeamento de Laços de Repetição <span class="check-icon">✔</span></h2>
+    <p>Escreva um programa em Python que imprima uma tabela de multiplicação de 1 a 10, utilizando um loop for dentro de outro loop for.</p>
+
+                <button onclick="markAndNext('exercicios')">Marcar como feito e próximo</button>
+            </section>
+
+            <section id="certificado">
+                <h2>Certificado <span class="check-icon">✔</span></h2>
+                <div class="certificate-container">
+                    <h1>Certificado de Conclusão</h1>
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner">100%</div>
+                    </div>
+                    <div class="pdf-preview"></div>
+                    <a href="img/CERTIFICADO2.pdf" class="download-button" download>Download Certificado</a>
+                </div>
+            </section>
+        </div>
+        
+        <div class="sidebar">
+            <ul>
+                <li><a href="#apresentacao" class="nav-link">Apresentação</a></li><br>
+                <li><a href="#materias" class="nav-link">Matérias do curso</a></li><br>
+                <li><a href="#exercicios" class="nav-link">Exercícios</a></li><br>
+                <li><a href="#certificado" class="nav-link">Certificado</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        // JavaScript para mostrar/ocultar seções
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    sections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Opcional: Mostrar a primeira seção por padrão
+            sections.forEach((section, index) => {
+                if (index === 0) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+
+        // Função para marcar a seção como concluída e ir para a próxima
+        function markAndNext(currentSectionId) {
+            const currentSection = document.getElementById(currentSectionId);
+            const checkIcon = currentSection.querySelector('.check-icon');
+            checkIcon.style.display = 'inline';
+            
+            const sections = document.querySelectorAll('section');
+            let nextSectionIndex = Array.from(sections).indexOf(currentSection) + 1;
+            if (nextSectionIndex < sections.length) {
+                sections.forEach((section, index) => {
+                    if (index === nextSectionIndex) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    };
+                });
+            }
+        }
+    </script>
+</body>
+</html>

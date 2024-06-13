@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #000, #24313d) ;
+    background-size: cover; /* Garante que o gradiente cubra toda a tela */
+    background-attachment: fixed;
+}
+h5{
+    color: white;
+    font-size: xx-large;
+}
+
+header {
+    background-color: #223443;
+    display: flex;
+    position: relative;
+    color: white;
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens verticalmente */
+    height: 100px; /* Adicione a unidade de medida 'px' */
+    padding: 0 3%; /* Adicionado: padding para espaçamento interno */
+}
+
+header img {
+    max-height: 75px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: flex; /* Adicionado: para alinhar horizontalmente os itens */
+    align-items: center; /* Adicionado: alinha verticalmente os itens */
+    padding: 0 10px; /* Adicionado: espaçamento interno */
+}
+
+header nav {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .post-form {
+    margin-bottom: 20px;
+  }
+
+  .post-form textarea {
+    width: 100%;
+    height: 100px;
+  }
+
+  .post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .post p {
+    margin: 0;
+  }
